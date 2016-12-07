@@ -1,12 +1,109 @@
-<!doctype html>
+<!-- ### Criteria
+1. Create five options for the artist select element of any artist that you enjoy.
+1. Create at least five options for the album select element. One, or more, album for each artist.
+1. The links in the navigation bar don't need to link to anything just yet, you can use `<a href="#">View music</a>` for now
+1. Pick your four favorite songs from the artists you have chosen and use the information for each in the list that's on the right-hand side. You can use `h1` tags, `div` tags, `section` tags... whatever you like.
+ -->
+
+ <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
+<!-- nav bar
+		view music add music profile -->
+		<nav>
+			<li><a href="#">View Music</a></li>
+			<li><a href="#">Add Music</a></li>
+			<li><a href="#">Profile</a></li>
+		</nav>
+
+	<!-- sidebar length artist album  -->
+		<!-- >= 5 options for album select -->
+		<div class="container">
+
+				<div class="sidebar">
+
+			<!-- Arist Select -->
+					<p>Song Length</p>
+						<input type="range" name="songLength" id="songLength">
+					<p>Artist</p>
+						<select name="select" id="artistSelect">
+							<option value="op1">The Grateful Dead</option>
+							<option value="op2">Disco Biscuits</option>
+							<option value="op3">Amy Winehouse</option>
+							<option value="op4">Widespread Panic</option>
+							<option value="op5">The Band</option>
+							<option value="op6">UGK</option>
+						</select>
+				<!-- Album Select -->
+
+					<p>Album</p>
+						<select name="select" id="artistSelect">
+							<option value="op1">Europe '72</option>
+							<option value="op2">They Missed the Perfume</option>
+							<option value="op3">Back to Black</option>
+							<option value="op4">'Til the Medicine Takes</option>
+							<option value="op5">Last Waltz</option>
+							<option value="op6">Ridin Dirty</option>
+						</select>
+
+			<!-- Genre Checkbox -->
+					<div class="sidebarCheckbox">
+						<p>Genre</p>
+							<label><input type="checkbox" name="ch1">Rock</label>
+							<label><input type="checkbox" name="ch2">Rap</label>
+							<label><input type="checkbox" name="ch3">Jamtronica</label>
+							<label><input type="checkbox" name="ch4">Southern Jams</label>
+							<label><input type="checkbox" name="ch5">Jazz</label>
+							<label><input type="checkbox" name="ch6">Classic Rock
+							</label>
+
+					</div>
+				</div>
+
+			<!-- songnamecontainer -->
+
+					<div class="favorites">
+						<div class="favSongName" id="fav1">
+							<h1>Cumberland Blues</h1>
+								<p class="favArtistname">The Grateful Dead</p>
+								<p class="favAlbumname">Europe '72</p>
+								<p class="favArtistgenre">Rock</p>
+						</div>
+						<div class="favSongName" id="fav2">
+							<h1>Highwire</h1>
+								<p class="favArtistname">Disco Biscuits</p>
+								<p class="favAlbumname">They Missed the Perfume</p>
+								<p class="favArtistgenre">Jamtronica</p>
+						</div>
+						<div class="favSongName" id="fav3">
+							<h1>You Know I'm No Good</h1>
+								<p class="favArtistname">Amy Winehouse</p>
+								<p class="favAlbumname">Back to Black</p>
+								<p class="favArtistgenre">Jazz</p>
+						</div>
+						<div class="favSongName" id="fav4">
+							<h1>One Day</h1>
+								<p class="favArtistname">UGK</p>
+								<p class="favAlbumname">Ridin Dirty</p>
+								<p class="favArtistgenre">Rap
+								</p>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
 
 
 </body>
