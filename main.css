@@ -1,0 +1,71 @@
+* {
+	font-family: Arial;
+}
+body: {
+
+	display:flex;
+	justify-content: center;
+
+
+}
+
+
+
+nav {
+
+
+	background-color: #FFB4B0;
+	list-style: none;
+	display: flex;
+	border: 2px solid black;
+	padding: 1em;
+	width: 97%;
+}
+li {
+
+	padding-right: .3em;
+	padding-left: .3em;
+	font-size: .9em;
+}
+
+p {
+	margin-left: 40px;
+}
+
+
+.container {
+	max-height: 800px;
+	max-width: 1119px;
+	display: flex;
+
+
+}
+
+
+.sidebar {
+	background-color: #4DD7FA;
+	border: 2px solid black;
+	width: 25%;
+	padding: 10px;
+	margin-top: 1em;
+
+}
+
+
+.favorites {
+
+	background-color: #FEFAC0;
+	width: 72%;
+	border: 2px solid black;
+	margin-left: 1%;
+	margin-top: 1em;
+	padding-bottom: 2em;
+}
+
+
+.favSongName {
+	border-left: .12em;
+	border-right: .12em;
+	padding-right: 15px;
+	padding-left: 15px;
+}
